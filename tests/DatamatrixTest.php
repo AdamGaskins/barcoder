@@ -2,11 +2,6 @@
 
 namespace AdamGaskins\Barcoder\Tests;
 
-use AdamGaskins\Barcoder\Providers\Datamatrix;
-use AdamGaskins\Barcoder\Providers\QRCode;
-use AdamGaskins\Barcoder\Tests\SnapshotDrivers\SvgDriver;
-use Spatie\Snapshots\MatchesSnapshots;
-
 class DatamatrixTest extends TestCase
 {
     /** @test */

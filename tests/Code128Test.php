@@ -2,8 +2,6 @@
 
 namespace AdamGaskins\Barcoder\Tests;
 
-use AdamGaskins\Barcoder\Providers\Datamatrix;
-use AdamGaskins\Barcoder\Providers\QRCode;
 use Spatie\Snapshots\MatchesSnapshots;
 
 class Code128Test extends TestCase

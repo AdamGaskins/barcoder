@@ -3,7 +3,6 @@
 
 namespace AdamGaskins\Barcoder\Providers;
 
-
 use AdamGaskins\Barcoder\ProvidersAbstract\KreativeKorpProvider;
 
 class Code128 extends KreativeKorpProvider

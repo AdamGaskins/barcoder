@@ -3,7 +3,6 @@
 
 namespace AdamGaskins\Barcoder;
 
-
 abstract class BarcoderProvider
 {
     public $identifier;
@@ -15,6 +14,7 @@ abstract class BarcoderProvider
         $this->data = $data;
     }
 
-    public abstract function toSvg(): string;
-    public abstract function toPng(): string;
+    abstract public function toSvg(): string;
+
+    abstract public function toPng(): string;
 }

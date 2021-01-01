@@ -11,11 +11,12 @@ class Barcoder
     /**
      * @param $providers string|array The providers to register
      */
-    public function registerProvider($providers) {
+    public function registerProvider($providers)
+    {
         $providers = is_array($providers) ? $providers : func_get_args();
 
-        foreach($providers as $providerClass) {
-            if(!is_subclass_of($providerClass, BarcoderProvider::class) ||
+        foreach ($providers as $providerClass) {
+            if (! is_subclass_of($providerClass, BarcoderProvider::class) ||
                 (new ReflectionClass($providerClass))->isAbstract()) {
                 throw new \InvalidArgumentException('Not a valid Barcoder provider: ' . $providerClass);
             }
@@ -26,7 +27,7 @@ class Barcoder
 
     public function new($identifier, string $data = '')
     {
-        if(!array_key_exists($identifier, $this->providers)) {
+        if (! array_key_exists($identifier, $this->providers)) {
             throw new \InvalidArgumentException('Barcoder provider not found: ' . $identifier);
         }
 

@@ -38,5 +38,4 @@ class BarcoderProvidersTest extends TestCase
 
 class InvalidProvider
 {
-
 }

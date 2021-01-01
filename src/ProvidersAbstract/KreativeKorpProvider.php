@@ -3,7 +3,6 @@
 
 namespace AdamGaskins\Barcoder\ProvidersAbstract;
 
-
 use AdamGaskins\Barcoder\BarcoderProvider;
 use AdamGaskins\Barcoder\KreativeKorp\Barcode;
 
@@ -24,6 +23,7 @@ abstract class KreativeKorpProvider extends BarcoderProvider
         $image = (new Barcode)->render_image($this->symbology, $this->data, $this->getOptions());
         ob_start();
         imagepng($image);
+
         return ob_get_clean();
     }
 
@@ -33,7 +33,7 @@ abstract class KreativeKorpProvider extends BarcoderProvider
             'p' => 0,
             'wq' => 0,
             'sf' => $this->scaleFactor,
-            'bc' => $this->backgroundColor
+            'bc' => $this->backgroundColor,
         ];
     }
 }
