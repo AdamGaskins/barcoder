@@ -2,8 +2,8 @@
 
 namespace AdamGaskins\Barcoder\Tests;
 
-use AdamGaskins\Barcoder\Facades\Barcoder;
 use AdamGaskins\Barcoder\BarcoderServiceProvider;
+use AdamGaskins\Barcoder\Facades\Barcoder;
 use AdamGaskins\Barcoder\Tests\SnapshotDrivers\PngDriver;
 use AdamGaskins\Barcoder\Tests\SnapshotDrivers\SvgDriver;
 use Orchestra\Testbench\TestCase as Orchestra;

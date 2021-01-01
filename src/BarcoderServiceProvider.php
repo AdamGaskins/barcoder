@@ -20,7 +20,7 @@ class BarcoderServiceProvider extends ServiceProvider
     protected function registerDefaultProviders()
     {
         $providers = array_map(
-            fn($file) => 'AdamGaskins\Barcoder\Providers\\' . basename($file, '.php'),
+            fn ($file) => 'AdamGaskins\Barcoder\Providers\\' . basename($file, '.php'),
             glob(__DIR__ . '/Providers/*.php')
         );
 
