@@ -1,0 +1,57 @@
+{
+    "name": "adamgaskins/barcoder",
+    "description": "A classy package to generate barcodes in Laravel.",
+    "keywords": [
+        "adamgaskins", "laravel","barcoder"
+    ],
+    "homepage": "https://github.com/adamgaskins/barcoder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Gaskins",
+            "email": "adam@gaskins.dev",
+            "homepage": "https://adamgaskins.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "ext-gd": "*",
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3",
+        "spatie/phpunit-snapshot-assertions": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "AdamGaskins\\Barcoder\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AdamGaskins\\Barcoder\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AdamGaskins\\Barcoder\\BarcoderServiceProvider"
+            ],
+            "aliases": {
+                "Barcoder": "AdamGaskins\\Barcoder\\Facades\\Barcoder"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
