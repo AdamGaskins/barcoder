@@ -9,12 +9,34 @@ abstract class BarcoderProvider
 
     protected $data;
 
+    protected string $backgroundColor = '#00000000';
+    protected string $color = '#000000';
+    protected ?float $scaleX = 1;
+    protected ?float $scaleY = 1;
+
     public function __construct(string $data = '')
     {
         $this->data = $data;
     }
 
+    public function backgroundColor(string $backgroundColor): self
+    {
+        return $this->clone([ 'backgroundColor' => $backgroundColor ]);
+    }
+
+    public function color(string $color): self
+    {
+        return $this->clone([ 'color' => $color ]);
+    }
+
     abstract public function toSvg(): string;
 
-    abstract public function toPng(): string;
+    protected function clone(array $attributes): self
+    {
+        $new = clone $this;
+        foreach($attributes as $key => $value) {
+            $new->{$key} = $value;
+        }
+        return $new;
+    }
 }

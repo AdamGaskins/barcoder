@@ -4,14 +4,28 @@ namespace AdamGaskins\Barcoder;
 
 use ReflectionClass;
 
+/**
+ * @method static \AdamGaskins\Barcoder\Providers\Code128 code128(string $data)
+ * @method static \AdamGaskins\Barcoder\Providers\Datamatrix datamatrix(string $data)
+ * @method static \AdamGaskins\Barcoder\Providers\QRCode qrcode(string $data)
+ */
 class Barcoder
 {
+    protected static $instance = null;
+
     protected $providers = [];
 
-    /**
-     * @param $providers string|array The providers to register
-     */
-    public function registerProvider($providers)
+    public function __construct()
+    {
+        $providers = array_map(
+            fn ($file) => 'AdamGaskins\Barcoder\Providers\\' . basename($file, '.php'),
+            glob(__DIR__ . '/Providers/*.php')
+        );
+
+        $this->_registerProvider($providers);
+    }
+
+    protected function _registerProvider($providers)
     {
         $providers = is_array($providers) ? $providers : func_get_args();
 
@@ -25,17 +39,32 @@ class Barcoder
         }
     }
 
-    public function new($identifier, string $data = '')
+    /**
+     * @param $providers string|array The providers to register
+     */
+    public static function registerProvider($providers)
     {
-        if (! array_key_exists($identifier, $this->providers)) {
+        static::instance()->_registerProvider($providers);
+    }
+
+    public static function new($identifier, string $data = '')
+    {
+        if (! array_key_exists($identifier, static::instance()->providers)) {
             throw new \InvalidArgumentException('Barcoder provider not found: ' . $identifier);
         }
 
-        return new $this->providers[$identifier]($data);
+        $providerClass = static::instance()->providers[$identifier];
+
+        return new $providerClass($data);
     }
 
-    public function __call($name, $arguments)
+    public static function __callStatic($name, $arguments)
     {
-        return $this->new($name, ...$arguments);
+        return static::new($name, ...$arguments);
+    }
+
+    protected static function instance()
+    {
+        return static::$instance ?? (static::$instance = new Barcoder());
     }
 }

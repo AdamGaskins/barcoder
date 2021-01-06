@@ -10,21 +10,12 @@ abstract class KreativeKorpProvider extends BarcoderProvider
 {
     protected string $symbology;
 
-    protected string $backgroundColor = '#00000000';
-    protected int $scaleFactor = 10;
+    protected ?float $scaleX = 10;
+    protected ?float $scaleY = 10;
 
     public function toSvg(): string
     {
         return (new Barcode)->render_svg($this->symbology, $this->data, $this->getOptions());
-    }
-
-    public function toPng(): string
-    {
-        $image = (new Barcode)->render_image($this->symbology, $this->data, $this->getOptions());
-        ob_start();
-        imagepng($image);
-
-        return ob_get_clean();
     }
 
     protected function getOptions(): array
@@ -32,8 +23,10 @@ abstract class KreativeKorpProvider extends BarcoderProvider
         return [
             'p' => 0,
             'wq' => 0,
-            'sf' => $this->scaleFactor,
             'bc' => $this->backgroundColor,
+            'cm' => $this->color,
+            'sx' => $this->scaleX,
+            'sy' => $this->scaleY
         ];
     }
 }

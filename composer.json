@@ -1,6 +1,6 @@
 {
     "name": "adamgaskins/barcoder",
-    "description": "A classy package to generate barcodes in Laravel.",
+    "description": "A classy package to generate SVG barcodes for the web.",
     "keywords": [
         "adamgaskins", "laravel","barcoder"
     ],
@@ -16,8 +16,7 @@
     ],
     "require": {
         "ext-gd": "*",
-        "php": "^7.4|^8.0",
-        "illuminate/contracts": "^8.0"
+        "php": "^7.4|^8.0"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
@@ -41,16 +40,6 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "AdamGaskins\\Barcoder\\BarcoderServiceProvider"
-            ],
-            "aliases": {
-                "Barcoder": "AdamGaskins\\Barcoder\\Facades\\Barcoder"
-            }
-        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

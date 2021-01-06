@@ -2,49 +2,18 @@
 
 namespace AdamGaskins\Barcoder\Tests;
 
-use AdamGaskins\Barcoder\BarcoderServiceProvider;
-use AdamGaskins\Barcoder\Facades\Barcoder;
 use AdamGaskins\Barcoder\Tests\SnapshotDrivers\PngDriver;
 use AdamGaskins\Barcoder\Tests\SnapshotDrivers\SvgDriver;
-use Orchestra\Testbench\TestCase as Orchestra;
+use PHPUnit\Framework\TestCase as PhpUnit;
 use Spatie\Snapshots\MatchesSnapshots;
 
-class TestCase extends Orchestra
+class TestCase extends PhpUnit
 {
     use MatchesSnapshots;
 
     public function setUp(): void
     {
         parent::setUp();
-    }
-
-    protected function getPackageProviders($app)
-    {
-        return [
-            BarcoderServiceProvider::class,
-        ];
-    }
-
-    public function getPackageAliases($app)
-    {
-        return [
-            'Barcoder' => Barcoder::class,
-        ];
-    }
-
-    public function getEnvironmentSetUp($app)
-    {
-        $app['config']->set('database.default', 'sqlite');
-        $app['config']->set('database.connections.sqlite', [
-            'driver' => 'sqlite',
-            'database' => ':memory:',
-            'prefix' => '',
-        ]);
-
-        /*
-        include_once __DIR__.'/../database/migrations/create_skeleton_table.php.stub';
-        (new \CreatePackageTable())->up();
-        */
     }
 
     protected function assertMatchesSvgSnapshot(string $actual)
