@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/screenshot.png" width="300px" /></p>
+<p align="center"><img src="assets/screenshot.png" /></p>
 
 A classy package to generate barcodes in Laravel.
 
