@@ -26,7 +26,7 @@ abstract class KreativeKorpProvider extends BarcoderProvider
             'bc' => $this->backgroundColor,
             'cm' => $this->color,
             'sx' => $this->scaleX,
-            'sy' => $this->scaleY
+            'sy' => $this->scaleY,
         ];
     }
 }

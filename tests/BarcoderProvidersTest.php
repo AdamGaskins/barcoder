@@ -53,10 +53,12 @@ class BarcoderProvidersTest extends TestCase
             Barcoder::{$identifier}($sampleText)
                 ->color('#f4a261')
                 ->backgroundColor('#2a9d8f')
-                ->toSvg());
+                ->toSvg()
+        );
     }
 
     protected const ALPHANUMERIC = 'ABCxyz123';
+
     public function providers()
     {
         return [

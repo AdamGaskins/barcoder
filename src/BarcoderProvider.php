@@ -34,9 +34,10 @@ abstract class BarcoderProvider
     protected function clone(array $attributes): self
     {
         $new = clone $this;
-        foreach($attributes as $key => $value) {
+        foreach ($attributes as $key => $value) {
             $new->{$key} = $value;
         }
+
         return $new;
     }
 }
