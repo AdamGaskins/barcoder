@@ -3,9 +3,9 @@
 
 namespace AdamGaskins\Barcoder\Providers;
 
-use AdamGaskins\Barcoder\ProvidersAbstract\KreativeKorpProvider;
+use AdamGaskins\Barcoder\ProviderAbstract\KreativeKorpLabelledProvider;
 
-class Code128 extends KreativeKorpProvider
+class Code128 extends KreativeKorpLabelledProvider
 {
     public string $identifier = 'code128';
 

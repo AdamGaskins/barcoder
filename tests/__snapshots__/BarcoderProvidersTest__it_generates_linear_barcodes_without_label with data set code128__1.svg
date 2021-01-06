@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="134" height="80" viewBox="0 0 134 80">
+  <g>
+    <rect x="0" y="0" width="134" height="80" fill="#00000000"/>
+    <g transform="translate(0 0)">
+      <g>
+        <rect x="0" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="3" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="6" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="11" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="13" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="17" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="22" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="26" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="28" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="33" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="37" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="41" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="44" y="0" width="4" height="80" fill="#000000"/>
+        <rect x="50" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="53" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="55" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="58" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="61" y="0" width="4" height="80" fill="#000000"/>
+        <rect x="66" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="69" y="0" width="4" height="80" fill="#000000"/>
+        <rect x="74" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="77" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="80" y="0" width="3" height="80" fill="#000000"/>
+        <rect x="85" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="88" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="92" y="0" width="3" height="80" fill="#000000"/>
+        <rect x="97" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="99" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="103" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="105" y="0" width="3" height="80" fill="#000000"/>
+        <rect x="110" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="113" y="0" width="3" height="80" fill="#000000"/>
+        <rect x="118" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="121" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="126" y="0" width="3" height="80" fill="#000000"/>
+        <rect x="130" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="132" y="0" width="2" height="80" fill="#000000"/>
+      </g>
+    </g>
+  </g>
+</svg>

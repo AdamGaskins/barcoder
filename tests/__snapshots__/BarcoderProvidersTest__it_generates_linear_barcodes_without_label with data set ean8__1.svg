@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="67" height="80" viewBox="0 0 67 80">
+  <g>
+    <rect x="0" y="0" width="67" height="80" fill="#00000000"/>
+    <g transform="translate(0 0)">
+      <g/>
+      <g>
+        <rect x="0" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="2" y="0" width="1" height="80" fill="#000000"/>
+      </g>
+      <g>
+        <rect x="5" y="0" width="2" height="80" fill="#000000"/>
+        <rect x="9" y="0" width="1" height="80" fill="#000000"/>
+      </g>
+      <g>
+        <rect x="12" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="15" y="0" width="2" height="80" fill="#000000"/>
+      </g>
+      <g>
+        <rect x="18" y="0" width="4" height="80" fill="#000000"/>
+        <rect x="23" y="0" width="1" height="80" fill="#000000"/>
+      </g>
+      <g>
+        <rect x="25" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="29" y="0" width="2" height="80" fill="#000000"/>
+      </g>
+      <g>
+        <rect x="32" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="34" y="0" width="1" height="80" fill="#000000"/>
+      </g>
+      <g>
+        <rect x="36" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="39" y="0" width="3" height="80" fill="#000000"/>
+      </g>
+      <g>
+        <rect x="43" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="45" y="0" width="1" height="80" fill="#000000"/>
+      </g>
+      <g>
+        <rect x="50" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="54" y="0" width="1" height="80" fill="#000000"/>
+      </g>
+      <g>
+        <rect x="57" y="0" width="3" height="80" fill="#000000"/>
+        <rect x="62" y="0" width="1" height="80" fill="#000000"/>
+      </g>
+      <g>
+        <rect x="64" y="0" width="1" height="80" fill="#000000"/>
+        <rect x="66" y="0" width="1" height="80" fill="#000000"/>
+      </g>
+      <g/>
+    </g>
+  </g>
+</svg>

@@ -3,9 +3,9 @@
 
 namespace AdamGaskins\Barcoder\Providers;
 
-use AdamGaskins\Barcoder\ProvidersAbstract\KreativeKorpProvider;
+use AdamGaskins\Barcoder\ProviderAbstract\KreativeKorpLabelledProvider;
 
-class EAN8 extends KreativeKorpProvider
+class EAN8 extends KreativeKorpLabelledProvider
 {
     public string $identifier = 'ean8';
 

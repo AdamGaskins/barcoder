@@ -1,7 +1,7 @@
 <?php
 
 
-namespace AdamGaskins\Barcoder\ProvidersAbstract;
+namespace AdamGaskins\Barcoder\ProviderAbstract;
 
 use AdamGaskins\Barcoder\BarcoderProvider;
 use AdamGaskins\Barcoder\KreativeKorp\Barcode;
@@ -10,8 +10,8 @@ abstract class KreativeKorpProvider extends BarcoderProvider
 {
     protected string $symbology;
 
-    protected ?float $scaleX = 10;
-    protected ?float $scaleY = 10;
+    protected ?float $scaleX = 1;
+    protected ?float $scaleY = 1;
 
     public function toSvg(): string
     {
@@ -22,6 +22,7 @@ abstract class KreativeKorpProvider extends BarcoderProvider
     {
         return [
             'p' => 0,
+            'th' => 0,
             'wq' => 0,
             'bc' => $this->backgroundColor,
             'cm' => $this->color,

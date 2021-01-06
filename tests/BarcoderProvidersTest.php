@@ -31,7 +31,7 @@ class BarcoderProvidersTest extends TestCase
 
     /**
      * @test
-     * @dataProvider providers
+     * @dataProvider barcodes
      */
     public function it_loads_providers($providerClass, $identifier, $sampleText)
     {
@@ -40,7 +40,7 @@ class BarcoderProvidersTest extends TestCase
 
     /**
      * @test
-     * @dataProvider providers
+     * @dataProvider barcodes
      */
     public function it_generates_svgs($providerClass, $identifier, $sampleText)
     {
@@ -49,7 +49,7 @@ class BarcoderProvidersTest extends TestCase
 
     /**
      * @test
-     * @dataProvider providers
+     * @dataProvider barcodes
      */
     public function it_generates_svgs_with_colors($providerClass, $identifier, $sampleText)
     {
@@ -61,16 +61,34 @@ class BarcoderProvidersTest extends TestCase
         );
     }
 
+    /**
+     * @test
+     * @dataProvider barcodes2d
+     */
+    public function it_generates_linear_barcodes_without_label($providerClass, $identifier, $sampleText)
+    {
+        $this->assertMatchesSvgSnapshot(
+            Barcoder::{$identifier}($sampleText)
+                ->hideLabel()
+                ->toSvg()
+        );
+    }
+
     protected const ASCII = 'ABCxyz123';
     protected const TWELVE_DIGIT = '12345678901*';
     protected const SIX_DIGIT = '12345*';
 
-    public function providers()
+    public function barcodes()
     {
-        return [
+        return array_merge($this->barcodes2d(), [
             'qrcode' => [ QRCode::class, 'qrcode', self::ASCII ],
             'datamatrix' => [ Datamatrix::class, 'datamatrix', self::ASCII ],
+        ]);
+    }
 
+    public function barcodes2d()
+    {
+        return [
             'upca' => [ UPCA::class, 'upca', '12345678901*' ],
             'upce' => [ UPCE::class, 'upce', '12345*' ],
             'ean8' => [ EAN8::class, 'ean8', '1234567*' ],

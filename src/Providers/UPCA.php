@@ -3,9 +3,9 @@
 
 namespace AdamGaskins\Barcoder\Providers;
 
-use AdamGaskins\Barcoder\ProvidersAbstract\KreativeKorpProvider;
+use AdamGaskins\Barcoder\ProviderAbstract\KreativeKorpLabelledProvider;
 
-class UPCA extends KreativeKorpProvider
+class UPCA extends KreativeKorpLabelledProvider
 {
     public string $identifier = 'upca';
 

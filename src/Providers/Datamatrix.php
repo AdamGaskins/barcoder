@@ -3,7 +3,7 @@
 
 namespace AdamGaskins\Barcoder\Providers;
 
-use AdamGaskins\Barcoder\ProvidersAbstract\KreativeKorpProvider;
+use AdamGaskins\Barcoder\ProviderAbstract\KreativeKorpProvider;
 
 class Datamatrix extends KreativeKorpProvider
 {

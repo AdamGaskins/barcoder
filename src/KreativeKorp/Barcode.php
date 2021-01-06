@@ -509,7 +509,7 @@ class Barcode
                 }
                 $mx += $mw;
             }
-            if (! is_null($label)) {
+            if (! is_null($label) && $options['showLabel'] ?? true) {
                 $lx = ($x + ($mx - $x) * $lx);
                 $svg .= '<text';
                 $svg .= ' x="' . $lx . '" y="' . $ly . '"';
