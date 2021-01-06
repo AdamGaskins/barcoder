@@ -5,7 +5,11 @@ namespace AdamGaskins\Barcoder\Tests;
 use AdamGaskins\Barcoder\Barcoder;
 use AdamGaskins\Barcoder\Providers\Code128;
 use AdamGaskins\Barcoder\Providers\Datamatrix;
+use AdamGaskins\Barcoder\Providers\EAN13;
+use AdamGaskins\Barcoder\Providers\EAN8;
 use AdamGaskins\Barcoder\Providers\QRCode;
+use AdamGaskins\Barcoder\Providers\UPCA;
+use AdamGaskins\Barcoder\Providers\UPCE;
 
 class BarcoderProvidersTest extends TestCase
 {
@@ -57,14 +61,21 @@ class BarcoderProvidersTest extends TestCase
         );
     }
 
-    protected const ALPHANUMERIC = 'ABCxyz123';
+    protected const ASCII = 'ABCxyz123';
+    protected const TWELVE_DIGIT = '12345678901*';
+    protected const SIX_DIGIT = '12345*';
 
     public function providers()
     {
         return [
-            'qrcode' => [ QRCode::class, 'qrcode', self::ALPHANUMERIC ],
-            'datamatrix' => [ Datamatrix::class, 'datamatrix', self::ALPHANUMERIC ],
-            'code128' => [ Code128::class, 'code128', self::ALPHANUMERIC ],
+            'qrcode' => [ QRCode::class, 'qrcode', self::ASCII ],
+            'datamatrix' => [ Datamatrix::class, 'datamatrix', self::ASCII ],
+
+            'upca' => [ UPCA::class, 'upca', '12345678901*' ],
+            'upce' => [ UPCE::class, 'upce', '12345*' ],
+            'ean8' => [ EAN8::class, 'ean8', '1234567*' ],
+            'ean13' => [ EAN13::class, 'ean13', '123456789012*' ],
+            'code128' => [ Code128::class, 'code128', self::ASCII ],
         ];
     }
 }

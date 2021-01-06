@@ -5,9 +5,9 @@ namespace AdamGaskins\Barcoder;
 
 abstract class BarcoderProvider
 {
-    public $identifier;
+    public string $identifier;
 
-    protected $data;
+    protected string $data;
 
     protected string $backgroundColor = '#00000000';
     protected string $color = '#000000';
@@ -16,7 +16,12 @@ abstract class BarcoderProvider
 
     public function __construct(string $data = '')
     {
-        $this->data = $data;
+        $this->data = $this->validateData($data);
+    }
+
+    protected function validateData(string $data): string
+    {
+        return $data;
     }
 
     public function backgroundColor(string $backgroundColor): self

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="510" height="800" viewBox="0 0 510 800">
+  <g>
+    <rect x="0" y="0" width="510" height="800" fill="#00000000"/>
+    <g transform="translate(0 0) scale(10 1)">
+      <g/>
+      <g>
+        <rect x="0" y="0" width="1" height="800" fill="#000000"/>
+        <rect x="2" y="0" width="1" height="800" fill="#000000"/>
+      </g>
+      <g>
+        <rect x="5" y="0" width="1" height="795" fill="#000000"/>
+        <rect x="8" y="0" width="2" height="795" fill="#000000"/>
+        <text x="9" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">2</text>
+      </g>
+      <g>
+        <rect x="11" y="0" width="1" height="795" fill="#000000"/>
+        <rect x="16" y="0" width="1" height="795" fill="#000000"/>
+        <text x="15" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">3</text>
+      </g>
+      <g>
+        <rect x="18" y="0" width="1" height="795" fill="#000000"/>
+        <rect x="22" y="0" width="2" height="795" fill="#000000"/>
+        <text x="21" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">4</text>
+      </g>
+      <g>
+        <rect x="25" y="0" width="1" height="795" fill="#000000"/>
+        <rect x="28" y="0" width="3" height="795" fill="#000000"/>
+        <text x="27" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">0</text>
+      </g>
+      <g>
+        <rect x="32" y="0" width="2" height="795" fill="#000000"/>
+        <rect x="37" y="0" width="1" height="795" fill="#000000"/>
+        <text x="33" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">5</text>
+      </g>
+      <g>
+        <rect x="39" y="0" width="1" height="795" fill="#000000"/>
+        <rect x="44" y="0" width="1" height="795" fill="#000000"/>
+        <text x="39" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">3</text>
+      </g>
+      <g>
+        <rect x="46" y="0" width="1" height="800" fill="#000000"/>
+        <rect x="48" y="0" width="1" height="800" fill="#000000"/>
+        <rect x="50" y="0" width="1" height="800" fill="#000000"/>
+      </g>
+      <g/>
+    </g>
+  </g>
+</svg>

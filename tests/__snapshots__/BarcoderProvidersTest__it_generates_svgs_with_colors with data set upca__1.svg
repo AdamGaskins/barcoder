@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="950" height="800" viewBox="0 0 950 800">
+  <g>
+    <rect x="0" y="0" width="950" height="800" fill="#2a9d8f"/>
+    <g transform="translate(0 0) scale(10 1)">
+      <g>
+        <text x="0" y="800" text-anchor="middle" font-family="monospace" font-size="10" fill="black">1</text>
+      </g>
+      <g>
+        <rect x="0" y="0" width="1" height="800" fill="#f4a261"/>
+        <rect x="2" y="0" width="1" height="800" fill="#f4a261"/>
+      </g>
+      <g>
+        <rect x="5" y="0" width="2" height="800" fill="#f4a261"/>
+        <rect x="9" y="0" width="1" height="800" fill="#f4a261"/>
+      </g>
+      <g>
+        <rect x="12" y="0" width="1" height="795" fill="#f4a261"/>
+        <rect x="15" y="0" width="2" height="795" fill="#f4a261"/>
+        <text x="15.833333333333" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">2</text>
+      </g>
+      <g>
+        <rect x="18" y="0" width="4" height="795" fill="#f4a261"/>
+        <rect x="23" y="0" width="1" height="795" fill="#f4a261"/>
+        <text x="21.666666666667" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">3</text>
+      </g>
+      <g>
+        <rect x="25" y="0" width="1" height="795" fill="#f4a261"/>
+        <rect x="29" y="0" width="2" height="795" fill="#f4a261"/>
+        <text x="27.5" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">4</text>
+      </g>
+      <g>
+        <rect x="32" y="0" width="2" height="795" fill="#f4a261"/>
+        <rect x="37" y="0" width="1" height="795" fill="#f4a261"/>
+        <text x="33.333333333333" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">5</text>
+      </g>
+      <g>
+        <rect x="39" y="0" width="1" height="795" fill="#f4a261"/>
+        <rect x="41" y="0" width="4" height="795" fill="#f4a261"/>
+        <text x="39.166666666667" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">6</text>
+      </g>
+      <g>
+        <rect x="46" y="0" width="1" height="800" fill="#f4a261"/>
+        <rect x="48" y="0" width="1" height="800" fill="#f4a261"/>
+      </g>
+      <g>
+        <rect x="50" y="0" width="1" height="795" fill="#f4a261"/>
+        <rect x="54" y="0" width="1" height="795" fill="#f4a261"/>
+        <text x="55.833333333333" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">7</text>
+      </g>
+      <g>
+        <rect x="57" y="0" width="1" height="795" fill="#f4a261"/>
+        <rect x="60" y="0" width="1" height="795" fill="#f4a261"/>
+        <text x="61.666666666667" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">8</text>
+      </g>
+      <g>
+        <rect x="64" y="0" width="3" height="795" fill="#f4a261"/>
+        <rect x="68" y="0" width="1" height="795" fill="#f4a261"/>
+        <text x="67.5" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">9</text>
+      </g>
+      <g>
+        <rect x="71" y="0" width="3" height="795" fill="#f4a261"/>
+        <rect x="76" y="0" width="1" height="795" fill="#f4a261"/>
+        <text x="73.333333333333" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">0</text>
+      </g>
+      <g>
+        <rect x="78" y="0" width="2" height="795" fill="#f4a261"/>
+        <rect x="82" y="0" width="2" height="795" fill="#f4a261"/>
+        <text x="79.166666666667" y="805" text-anchor="middle" font-family="monospace" font-size="10" fill="black">1</text>
+      </g>
+      <g>
+        <rect x="85" y="0" width="2" height="800" fill="#f4a261"/>
+        <rect x="88" y="0" width="2" height="800" fill="#f4a261"/>
+      </g>
+      <g>
+        <rect x="92" y="0" width="1" height="800" fill="#f4a261"/>
+        <rect x="94" y="0" width="1" height="800" fill="#f4a261"/>
+      </g>
+      <g>
+        <text x="95" y="800" text-anchor="middle" font-family="monospace" font-size="10" fill="black">2</text>
+      </g>
+    </g>
+  </g>
+</svg>

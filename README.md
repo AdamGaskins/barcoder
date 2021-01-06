@@ -18,9 +18,28 @@ composer require adamgaskins/barcoder
 
 See below for a full list of supported barcode types.
 
+#### QR Code
 ```php
 Barcoder::qrcode('data to encode')->toSvg();
+```
 
+#### Datamatrix
+```php
+Barcoder::datamatrix('data to encode')->toSvg();
+```
+
+#### Code 128
+```php
+Barcoder::code128('data to encode')->toSvg();
+```
+
+#### UPC-A
+```php
+Barcoder::upca('data to encode')->toSvg();
+```
+
+#### UPC-E
+```php
 Barcoder::code128('data to encode')->toSvg();
 ```
 

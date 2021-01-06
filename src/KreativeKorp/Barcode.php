@@ -999,7 +999,7 @@ class Barcode
         return ['g' => 'l', 'b' => $blocks];
     }
 
-    private function upc_a_normalize($data)
+    public function upc_a_normalize($data)
     {
         $data = preg_replace('/[^0-9*]/', '', $data);
         /* Set length to 12 digits. */
@@ -1031,7 +1031,10 @@ class Barcode
         while (($o = strrpos($data, '*')) !== false) {
             $checksum = 0;
             for ($i = 0; $i < 12; $i++) {
-                $digit = substr($data, $i, 1);
+                $digit = $data[$i];
+                if ($digit === '*') {
+                    continue;
+                }
                 $checksum += (($i % 2) ? 1 : 3) * $digit;
             }
             $checksum *= (($o % 2) ? 9 : 3);
@@ -1115,6 +1118,9 @@ class Barcode
             $checksum = 0;
             for ($i = 0; $i < 13; $i++) {
                 $digit = substr($data, $i, 1);
+                if ($digit === '*') {
+                    continue;
+                }
                 $checksum += (($i % 2) ? 3 : 1) * $digit;
             }
             $checksum *= (($o % 2) ? 3 : 9);
@@ -1147,6 +1153,9 @@ class Barcode
             $checksum = 0;
             for ($i = 0; $i < 8; $i++) {
                 $digit = substr($data, $i, 1);
+                if ($digit === '*') {
+                    continue;
+                }
                 $checksum += (($i % 2) ? 1 : 3) * $digit;
             }
             $checksum *= (($o % 2) ? 9 : 3);
