@@ -40,9 +40,6 @@ Barcoder::code128('data to encode')->hideLabel()->toSvg();
 Barcoder::ean8('12345678')->toSvg();
 
 Barcoder::ean8('12345678')->hideLabel()->toSvg();
-
-// check digit will automatically be calculated
-Barcoder::ean8('1234567')->toSvg();
 ```
 
 #### EAN-13
@@ -50,9 +47,6 @@ Barcoder::ean8('1234567')->toSvg();
 Barcoder::ean8('1234567890123')->toSvg();
 
 Barcoder::ean8('1234567890123')->hideLabel()->toSvg();
-
-// check digit will automatically be calculated
-Barcoder::ean8('123456789012')->toSvg();
 ```
 
 #### UPC-A
@@ -60,9 +54,6 @@ Barcoder::ean8('123456789012')->toSvg();
 Barcoder::upca('123456789012')->toSvg();
 
 Barcoder::upca('123456789012')->hideLabel()->toSvg();
-
-// check digit will automatically be calculated
-Barcoder::upca('12345678901')->toSvg();
 ```
 
 #### UPC-E
@@ -70,9 +61,6 @@ Barcoder::upca('12345678901')->toSvg();
 Barcoder::upce('123456')->toSvg();
 
 Barcoder::upce('123456')->hideLabel()->toSvg();
-
-// check digit will automatically be calculated
-Barcoder::upce('12345')->toSvg();
 ```
 
 ## Testing
