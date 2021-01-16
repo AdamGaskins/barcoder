@@ -42,7 +42,7 @@ Barcoder::ean8('12345678')->toSvg();
 Barcoder::ean8('12345678')->hideLabel()->toSvg();
 
 // check digit will automatically be calculated
-Barcoder::ean8('1234567*')->toSvg();
+Barcoder::ean8('1234567')->toSvg();
 ```
 
 #### EAN-13
