@@ -1,12 +1,13 @@
-<p align="center"><img width="260px" src="assets/logo_shadow.png" /></p>
-<h1 align="center">Barcoder</h1>
+<p align="center"><a href="https://github.com/AdamGaskins/barcoder" alt="Barcoder on Github"><img width="350px" src="assets/logo.svg" /></a></p>
 
-<p align="center"><img src="assets/screenshot.png" /></p>
+<p align="center">A classy package to generate SVG barcodes for the web.</p>
 
-A classy package to generate barcodes in Laravel.
+<p align="center">
+    <a href="https://packagist.org/packages/adamgaskins/barcoder" alt="Latest Version on Packagist"><img src="https://img.shields.io/packagist/v/adamgaskins/barcoder.svg?style=flat-square"></a>
+    <a href="https://github.com/adamgaskins/barcoder/actions?query=workflow%3ATests+branch%3Amaster" alt="GitHub Tests Action Status"><img src="https://img.shields.io/github/workflow/status/adamgaskins/barcoder/Tests?logo=Github&style=flat-square&label=tests"></a>
+</p>
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/adamgaskins/barcoder.svg?style=flat-square)](https://packagist.org/packages/adamgaskins/barcoder)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/adamgaskins/barcoder/Tests?logo=Github&style=flat-square&label=tests)](https://github.com/adamgaskins/barcoder/actions?query=workflow%3ATests+branch%3Amaster)
+<p align="center"><a href="https://github.com/AdamGaskins/barcoder" alt="Barcoder on Github"><img width="600px" src="assets/demo.gif" /></a></p>
 
 ## Installation
 
@@ -16,7 +17,7 @@ You can install the package via composer:
 composer require adamgaskins/barcoder
 ```
 
-## Documentation
+## Usage
 
 See below for a full list of supported barcode types.
 
